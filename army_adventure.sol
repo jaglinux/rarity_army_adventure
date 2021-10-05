@@ -27,6 +27,7 @@ contract army_adventure {
     function command_adventure_all() external{
         uint256 len = army[msg.sender].length;
         for(uint256 i = 0; i < len; i++) {
+            // reverts even if one summoner is ineligible to adventure
             rarity.adventure(army[msg.sender][i]);
         }
     }
