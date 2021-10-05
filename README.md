@@ -1,10 +1,10 @@
 # rarity_army_adventure
-Building army on top of rarity game by Andre Cronje.
+Building army on top of rarity game by Andre Cronje on Fantom Network.
 Task is to create army of all summoners and use it to adventure in a group.
 
 ## Steps to add summoners to army
 ### 1. Approve rarity_army_adventure contract to summoner.  
-   Go the main contract of rarity game, 0xce761D788DF608BD21bdd59d6f4B54b2e27F25Bb  
+   Go the main contract of rarity game FTM network, 0xce761D788DF608BD21bdd59d6f4B54b2e27F25Bb  
    Under Write contract, approve(to, tokenId) --> 'to' is the contract deployed address of rarity_army_adventure <yet to deploy the contract>  
                                                   tokenId is your summoner id.  
    Repeat above step for all the summoners belonging to each EOA.  
