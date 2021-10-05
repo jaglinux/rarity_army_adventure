@@ -22,6 +22,6 @@ Task is to create army of all summoners and use it to adventure in a group.
   Repeat for all EOA which has summoners attached to it. (commander --> summoners[])  
  
  ## Add or remove summoners
- command_adventure_all()  
+ register_to_army()  
  deregister_from_army()  
 
