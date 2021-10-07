@@ -8,7 +8,8 @@ interface IRarity {
 }
 
 contract army_adventure {
-    IRarity public rarity;
+    IRarity public immutable rarity;
+
     mapping(address => uint256[]) public army;
     
     constructor(address _rarity_addr) {
@@ -27,7 +28,6 @@ contract army_adventure {
     function command_adventure_all() external{
         uint256 len = army[msg.sender].length;
         for(uint256 i = 0; i < len; i++) {
-            // reverts even if one summoner is ineligible to adventure
             rarity.adventure(army[msg.sender][i]);
         }
     }
