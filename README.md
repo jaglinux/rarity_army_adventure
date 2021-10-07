@@ -16,7 +16,7 @@ Task is to create army of all summoners and use it to adventure in a group.
    Note that the summoners id should be approved to use this contract as mentioned in step1.  
    
 ## Command to order adventure once a day
-### 3. Go the rarity_army_adventure, 0x3e58fBbBa5330d0E6ebc9959928257d149B07D6d
+ 3. Go the rarity_army_adventure, 0x3e58fBbBa5330d0E6ebc9959928257d149B07D6d
   Under Write contract, command_adventure_all() --> this will order all summoners belonging to EOA to adventure.  
   Even if one summoner fails to adventure (due to 1 day limit), then the transaction will fail.  
   Repeat for all EOA which has summoners attached to it. (commander --> summoners[])  
